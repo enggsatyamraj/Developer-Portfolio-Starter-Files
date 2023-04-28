@@ -1,0 +1,253 @@
+:root{
+    --font_heading:'Prata', serif;
+    --font_body:'Inter', sans-serif;
+}
+body{
+    margin:0px;
+    padding:0px;
+}
+.main1 {
+    background: #000;
+    color: #fff;
+    padding-top:30px;
+    padding-right:10%;
+    padding-left:10%;
+    padding-bottom: 30px;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.jonathan{
+    font-family: var(--font_heading);
+    font-size:1.25rem;
+}
+.articles ul{
+    display:flex;
+    gap:30px;
+    list-style: none;
+    color:#848484;
+}
+.articles ul{
+    font-size:1rem;
+    font-family:var(--font_body);
+}
+.main3 button,
+.getInTouch button{
+    background:#FBE850;
+    color:#000;
+    border:none;
+    padding: 0.75em 1.4em;
+    font-family:var(--font_heading);
+    cursor:pointer;
+}
+.getInTouch img{
+    display:none;
+}
+.helping{
+    font-size:3rem;
+    font-family:var(--font_heading);
+    width:65%;
+    margin-top:60px;
+    margin-bottom:20px;
+}
+.award{
+    font-family:var(--font_body);
+    font-size:1rem;
+    width:55%;
+    margin-bottom:70px;
+    color:#848484;
+}
+.company_logo{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    width:100%;
+    height:auto;
+    flex-wrap: wrap;
+}
+.company_logo img{
+    flex-basis:calc(100%/6 - 100px);
+}
+.image_flexDiv{
+    display:flex;
+    margin-top:40px;
+    gap:40px;
+}
+.image1{
+    flex:1;
+}
+.image1 img{
+    width:100%;
+}
+.main3 p,
+.image1 p{
+    font-size:2.5rem;
+    display:flex;
+    align-items:center;
+    gap:20px;
+    font-family:var(--font_heading);
+    margin-top:20px;
+    margin-bottom:20px;
+    padding:0px;
+    cursor: pointer;
+}
+.image1 div{
+    font-size:1rem;
+    font-family:var(--font_body);
+}
+.image1 p:hover{
+    text-decoration: underline;
+}
+.main2{
+    background:#2E3038;
+    color: #fff;
+    padding-top:30px;
+    padding-right:10%;
+    padding-left:10%;
+    display:flex;
+    gap:20px;
+}
+.a_coFounder{
+    flex:1;
+}
+.b_cofounder{
+    flex:1;
+    font-size:0.89rem;
+}
+.a_coFounder p{
+    font-size:2.0rem;
+    font-family:var(--font_heading);
+    margin:0px;
+    color:#fff;
+}
+.main2{
+    color:#848484;
+    font-family: var(--font_body);
+    padding-top:70px;
+    padding-bottom:40px;
+}
+.a{
+    margin-top:20px;
+    font-size:0.89rem;
+}
+.main3{
+    background: #000;
+    color: #fff;
+    padding-top:30px;
+    padding-right:10%;
+    padding-left:10%;
+    padding-bottom:60px;
+}
+.main3 p{
+    margin-bottom:20px;
+    font-size:2rem;
+}
+.main3 div{
+    font-family:var(--font_body);
+    color:#848484;
+    font-size:0.89rem;
+    width:40%;
+    margin-top:-10px;
+    margin-bottom:20px;
+}
+.main4{
+    background:#2E3038;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-top:20px;
+    padding-right:10%;
+    padding-left:10%;
+    padding-bottom:20px;
+}
+.supreme1{
+    font-family:var(--font_heading);
+    font-size:1rem;
+}
+.supreme2{
+    display:flex;
+    gap:20px;
+}
+@media screen and (max-width:930px){
+    .image_flexDiv{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+    }
+    .main2{
+        display:flex;
+        flex-direction: column;
+    }
+    .a, .b_cofounder{
+        font-size:0.85rem;
+    }
+    .main3 div{
+        width:60%;
+    }
+}
+@media screen and (max-width:815px){
+    .articles{
+        display:none;
+    }
+    .getInTouch button{
+        display:none;
+    }
+    .getInTouch img{
+        display:block;
+    }
+    .jonathan{
+        font-size:1rem;
+    }
+    .helping{
+        width:100%;
+        font-size:2.5rem;
+    }
+    .award{
+        width:100%;
+    }
+    .company_logo img{
+        flex-basis:calc(100%/3 - 100px);
+    }
+    .image_flexDiv p{
+        font-size:2rem;
+    }
+    .main2 p{
+        font-size:1.75rem;
+    }
+    .main3 p{
+        font-size:1.75rem;
+    }
+    .a, .b_cofounder{
+        font-size:0.83rem;
+    }
+    .main3 div{
+        width:75%;
+    }
+}
+@media screen and (max-width:435px){
+    .helping{
+        width:100%;
+        font-size:2.1rem;
+    }
+    .company_logo img{
+        flex-basis:calc(100%/2 - 100px);
+    }
+    .image_flexDiv p{
+        font-size:1.75rem;
+    }
+    .main2 p{
+        font-size:1.5rem;
+    }
+    .main3 p{
+        font-size:1.5rem;
+    }
+    .a, .b_cofounder{
+        font-size:0.80rem;
+    }
+    .main3 div{
+        width:100%;
+    }
+}
